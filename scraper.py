@@ -16,11 +16,15 @@ root.cssselect("a")
 print(root.cssselect("a"))
 print (root)
 root.cssselect
+record={}
 listofmatches=root.cssselect("a")
 for match in listofmatches:
   print(match)
   print(match.attrib['href'])
-  print(lxml.html.tostring(match))
+  print(record={(match))
+  record["link"]=lxml.html.tostring(match)
+  print(record)
+  scraperwiki.sqlite.save(unique_keys=["link"], data=record)
 
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
