@@ -20,7 +20,7 @@ record={}
 listofmatches=root.cssselect("a")
 for match in listofmatches:
   print(match)
-  print(lxml.html.tostring(match)
+  print(lxml.html.tostring(match))
   record["link"] = lxml.html.tostring(match)
   print(record)
   scraperwiki.sqlite.save(unique_keys=["link"], data=record)
