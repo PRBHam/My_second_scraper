@@ -19,6 +19,7 @@ root.cssselect
 listofmatches=root.cssselect("a")
 for match in listofmatches:
   print(match)
+  print(match.attrib['href'])
   print(lmxl.html.tostring(match))
 
 # # Write out to the sqlite database using scraperwiki library
