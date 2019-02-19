@@ -20,7 +20,7 @@ listofmatches=root.cssselect("a")
 for match in listofmatches:
   print(match)
   print(match.attrib['href'])
-  print(lmxl.html.tostring(match))
+  print(lxml.html.tostring(match))
 
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
