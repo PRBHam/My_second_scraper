@@ -16,7 +16,7 @@ root.cssselect("a")
 print(root.cssselect("a"))
 print (root)
 root.cssselect
-List of matches=root.cssselect("a")
+listofmatches=root.cssselect("a")
 For match in List of matches:
   print(match)
 # # Write out to the sqlite database using scraperwiki library
